@@ -1,8 +1,9 @@
 name: GitHub Actions Demo
 run-name: testy testy testy
-on:
-  schedule:
-    - cron: "26 * * * *"
+on: push
+# on:
+#   schedule:
+#     - cron: "26 * * * *"
 jobs:
   incrementally-build-release:
     runs-on: ubuntu-latest
